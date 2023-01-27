@@ -49,7 +49,12 @@ function startGame() {
      car.style.top = "100px";
      car.style.backgroundColor = "red";
      gameScreen.appendChild(car);
-     
- 
+
+    //  let road  = document.createElement('img');
+    //  road.setAttribute('class','roadImg');
+    //  road.setAttribute('src','https://imgs.search.brave.com/mt17oxqIjfSaFWr84FYsbK-O_STqSEwebzwnSlTCQ2Y/rs:fit:594:597:1/g:ce/aHR0cDovL3d3dy5j/bGlwYXJ0YmVzdC5j/b20vY2xpcGFydHMv/ZFQ2L0tLQS9kVDZL/S0FMVDkucG5n');
+    //  car.append(road);
+    //  road.style.position = 'absolute' 
+    //  road.style.alignContent = 'center' 
 
 }
