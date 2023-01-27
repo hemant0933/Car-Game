@@ -16,6 +16,23 @@ let controls = {
     ArrowRight: false
 }
 
+let player = {
+    speed: 5, // 5px per sec
+    score: 0,
+    start: false
+}
+
+
+function start(){
+     console.log("Car")
+    let car = document.querySelector('.car');
+    
+     if(player.start){
+       car.style.top = 
+       requestAnimationFrame(start);
+     }
+}
+
 function keyPressed(e) {
     console.log("Pressed",e.key);
     if(controls.e.key !== undefined){
@@ -35,6 +52,7 @@ function keyReleased(e) {
 // startScreen.classList.add('hide');
 function startGame() {
      console.log("Clicked")
+     player.start = true;
     // add or remove a calss from certain element
     //  console.log(startScreen.classList)
      startScreen.classList.add('hide');
@@ -50,9 +68,7 @@ function startGame() {
      
      car.style.backgroundColor = "red";
      gameScreen.appendChild(car);
-
-     requestAnimationFrame(start)
-
-    
+     
+ 
 
 }
